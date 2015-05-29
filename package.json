@@ -1,0 +1,10 @@
+{
+    "version": "0.0.1",
+    "name": "nl.frismedia.configprefs",
+    "cordova_name": "ConfigPrefs",
+    "description": "Frismedia Config Preferences plugin",
+    "platforms": [
+        "ios"
+    ],
+    "engines": []
+}
