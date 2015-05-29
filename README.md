@@ -22,7 +22,7 @@ Supported Platforms
 Methods
 =================
 
-window.ConfigPrefs.get(key, successCallback)
+    window.ConfigPrefs.get(key, successCallback)
 
 
 window.ConfigPrefs.getConfigPreference
