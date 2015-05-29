@@ -3,6 +3,9 @@ ConfigPrefs Cordova Plugin
 
 This plugin can get preferences that are set in your application's config.xml and prepended with 'configprefs-'
 
+Installation
+-------------------
+
     cordova plugin add nl.frismedia.configprefs
 
 config.xml example
