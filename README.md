@@ -5,6 +5,11 @@ The `window.ConfigPrefs` can get preferences that are set in your application's 
 
     cordova plugin add nl.frismedia.configprefs
 
+config.xml example
+-------------------
+
+    <preference name="configprefs-Example" value="examplevalue"/>
+
 Supported Platforms
 -------------------
 
@@ -14,7 +19,7 @@ Supported Platforms
 Methods
 =================
 
-window.ConfigPrefs.getConfigPreference
+window.ConfigPrefs.getConfigPreference(key, successCallback)
 
 
 window.ConfigPrefs.getConfigPreference
@@ -22,7 +27,14 @@ window.ConfigPrefs.getConfigPreference
 
 Get a configpreference from config.xml by key (without the 'configprefs-' prefix)
 
-    window.ConfigPrefs.getConfigPreference(key);
+    window.ConfigPrefs.getConfigPreference('Example', function(value){
+        if (null === value) {
+            // key not found
+        }
+        else {
+            // value is set
+        }
+    });
     
 Browser fallback support
 -------------------
