@@ -18,7 +18,7 @@ public class ConfigPrefs extends CordovaPlugin {
             cordova.getThreadPool().execute(new Runnable() {
                 public void run() {
                     try {
-                       final String key = "configprefs-" + args.getString(0).toLowerCase();
+                       final String key = args.getString(0).toLowerCase();
                        // get from preferences
                        String value = cordova.getActivity().getIntent().getStringExtra(key);
                        Log.i("ConfigPrefs", "Found value '" + value + "' for key '" + key + "'");

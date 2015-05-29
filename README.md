@@ -1,7 +1,7 @@
 ConfigPrefs Cordova Plugin
 ======
 
-This plugin can get preferences that are set in your application's config.xml and prepended with 'configprefs-'
+This plugin can get preferences that are set in your application's config.xml.
 
 Installation
 -------------------
@@ -11,7 +11,7 @@ Installation
 config.xml example
 -------------------
 
-    <preference name="configprefs-Example" value="examplevalue"/>
+    <preference name="Example" value="examplevalue"/>
 
 Supported Platforms
 -------------------
@@ -28,7 +28,7 @@ window.ConfigPrefs.getConfigPreference(key, successCallback)
 window.ConfigPrefs.getConfigPreference
 -------------------
 
-Get a configpreference from config.xml by key (without the 'configprefs-' prefix)
+Get a configpreference from config.xml by key
 
     window.ConfigPrefs.getConfigPreference('Example', function(value){
         if (null === value) {
