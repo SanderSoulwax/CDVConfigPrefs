@@ -22,7 +22,7 @@ Supported Platforms
 Methods
 =================
 
-window.ConfigPrefs.getConfigPreference(key, successCallback)
+window.ConfigPrefs.get(key, successCallback)
 
 
 window.ConfigPrefs.getConfigPreference
@@ -30,7 +30,7 @@ window.ConfigPrefs.getConfigPreference
 
 Get a configpreference from config.xml by key
 
-    window.ConfigPrefs.getConfigPreference('Example', function(value){
+    window.ConfigPrefs.get('Example', function(value){
         if (null === value) {
             // key not found
         }

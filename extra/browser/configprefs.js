@@ -2,8 +2,8 @@ window.ConfigPrefs = function() {
 
 };
 
-ConfigPrefs.preferences = null;
-ConfigPrefs.getConfigPreference = function(key, success) {
+window.ConfigPrefs.preferences = null;
+window.ConfigPrefs.getConfigPreference = ConfigPrefs.get = function(key, success) {
     var preferencesLoaded = function(k, s) {
         return function() {
             s(('undefined' === typeof ConfigPrefs.preferences[k]) ? null : ConfigPrefs.preferences[k]);
